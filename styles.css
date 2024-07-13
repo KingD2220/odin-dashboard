@@ -20,6 +20,7 @@
 }
 
 .dashboard {
+    min-width: 300px;
     color: var(--accent);
     background-color: var(--main);
     grid-row: 1/3;
@@ -87,6 +88,7 @@ li {
 }
 
 .header {
+    min-width: 1150px;
     padding: 20px 100px 20px 50px;
     background-color: var(--accent);
 }
