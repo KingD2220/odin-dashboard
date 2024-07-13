@@ -27,7 +27,11 @@
 
 .main-container {
     display: grid;
-    grid-template-columns: 5fr 3fr;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 0.8fr 1fr;
+    background-color: var(--background);
+    padding: 40px 30px 0 30px;
+    gap: 15px;
 }
 
 .project-container {
@@ -112,8 +116,8 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 40px;
-    margin: 0 30px 0 250px;
+    gap: 25px;
+    margin: 0 10px 0 250px;
 }
 
 .name {
@@ -156,16 +160,11 @@ button {
     width: 125px;
     height: 50px;
     border-radius: 30px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: white;
     background-color: var(--main);
     border-style: none;
-}
-
-.main-container {
-    background-color: var(--background);
-    padding: 40px 0 0 30px;
 }
 
 h1, h2, h3 {
@@ -177,9 +176,11 @@ h1, h2, h3 {
 }
 
 .card {
+    display: grid;
+    grid-template-rows: 4fr 1fr;
     background-color: var(--accent);
     border-radius: 20px;
-    padding: 40px 40px 15px 40px;
+    padding: 40px 40px 40px 40px;
     box-shadow: 3px 6px 7px 0px rgba(0,0,0,0.15);
     
 }
@@ -187,7 +188,7 @@ h1, h2, h3 {
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
+    gap: 30px;
     margin: 20px 20px 0 0;
 }
 
@@ -195,7 +196,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: flex-end;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .icon {
@@ -209,4 +210,37 @@ h1, h2, h3 {
 p {
     margin-top: 5px;
     color: var(--paragraph);
+}
+
+.announcement-card {
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 20px;
+    gap: 40px;
+    padding-bottom: 20px;
+}
+
+.announcement {
+    border: 1px solid var(--header);
+    border-style: none none solid none;
+    padding-bottom: 20px;
+}
+
+.announcement:last-child {
+    border: none;
+}
+
+.trending-card {
+    grid-template-rows: repeat(4, 1fr);
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-name {
+    font-size: 1.3rem;
 }
