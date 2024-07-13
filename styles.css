@@ -73,12 +73,12 @@ li {
 }
 
 .menu-logo, .dash-logo {
-    width: 8%;
+    width: 30px;
     filter: invert(100%) sepia(0%) saturate(7484%) hue-rotate(210deg) brightness(105%) contrast(97%);
 }
 
 .dash-logo {
-    width: 14%;
+    width: 50px;
 }
 
 .header .top {
