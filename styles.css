@@ -103,6 +103,7 @@ li {
 .search > input {
     display: block;
     width: 100%;
+    min-width: 540px;
     height: 40px;
     margin: 0 70px 0 10px;
     padding-left: 15px;
