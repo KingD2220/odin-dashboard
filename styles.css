@@ -51,16 +51,18 @@ ul {
 li {
     display: flex;
     align-items: center;
-    gap: 15px;
-
     list-style-type: none;
     font-size: 1.5rem;
     font-weight: 500;
-    margin-bottom: 25px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 18px;
+    border-radius: 10px 0 0 10px;
 }
 
 li:hover {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(70%) saturate(564%) hue-rotate(176deg) brightness(90%) contrast(89%);
+    background-color: var(--400);
+    /* filter: brightness(0) saturate(100%) invert(100%) sepia(70%) saturate(564%) hue-rotate(176deg) brightness(90%) contrast(89%); */
 }
 
 .dash-header {
@@ -145,11 +147,16 @@ input:focus {
 .profile {
     width: 75px;
     height: 75px;
+    transition: all .2s ease-in-out;
 }
 
 .profile.large {
     width: 100px;
     height: 100px;
+}
+
+.profile:hover {
+    transform: scale(1.2);
 }
 
 .bottom {
@@ -200,7 +207,7 @@ h1, h2, h3 {
     border-radius: 20px;
     padding: 40px 40px 40px 40px;
     box-shadow: 3px 6px 7px 0px rgba(0,0,0,0.15);
-    
+    transition: all .2s ease-in-out;
 }
 
 .card-container {
@@ -218,7 +225,7 @@ h1, h2, h3 {
     transition: all .3s ease-in-out;
 }
 
-.icon:hover {
+.icon:hover{
     transform: scale(1.2);
 }
 
@@ -228,6 +235,10 @@ h1, h2, h3 {
 
 .project .description {
     font-size: 1.3rem;
+}
+
+.project:hover {
+    transform: scale(1.1);
 }
 
 p {
@@ -262,6 +273,10 @@ p {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.user:hover .profile{
+    transform: scale(1.2);
 }
 
 .user-name {
