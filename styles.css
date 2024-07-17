@@ -186,10 +186,12 @@ button {
     color: white;
     background-color: var(--main);
     border-style: none;
+    transition: all .2s ease-in-out;
 }
 
 button:hover {
     background-color: var(--header);
+    transform: scale(1.1);
 }
 
 h1, h2, h3 {
